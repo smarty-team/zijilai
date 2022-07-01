@@ -1,0 +1,12 @@
+{
+  "name": "zijilai",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "node ./scripts/preinstall.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
