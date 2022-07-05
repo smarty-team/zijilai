@@ -8,5 +8,10 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^18.0.1",
+    "pinia": "^2.0.14",
+    "vite": "^2.9.13"
+  }
 }
