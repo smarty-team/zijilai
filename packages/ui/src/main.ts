@@ -11,6 +11,9 @@ import { createApp, h } from "vue";
 // };
 import { createRouter, createWebHistory } from 'vue-router'
 import { createPinia } from 'pinia'
+
+import 'uno.css'
+
 const pinia = createPinia()
 
 import App from './App.vue'

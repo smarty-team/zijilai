@@ -13,5 +13,8 @@
     "@types/node": "^18.0.1",
     "pinia": "^2.0.14",
     "vite": "^2.9.13"
+  },
+  "devDependencies": {
+    "unocss": "^0.42.0"
   }
 }
