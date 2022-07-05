@@ -1,9 +1,14 @@
 <template>
-    <button @click="add">{{ num }}</button>
-    <button @click="user.add()">Pina: {{ user.count }}</button>
-    <div>Hello SFC ....12
+    <div>
+        <!-- <button @click="add">{{ num }}</button>
+        <button @click="user.add()">Pina: {{ user.count }}</button>
+        <div>Hello SFC
+        </div> -->
+
+        <router-view></router-view>
     </div>
-    <router-view></router-view>
+
+
 </template>
 
 <script setup lang="ts">

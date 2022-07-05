@@ -11,7 +11,10 @@
   "license": "ISC",
   "dependencies": {
     "@types/node": "^18.0.1",
+    "@unocss/preset-icons": "^0.43.1",
     "pinia": "^2.0.14",
-    "vite": "^2.9.13"
+    "unocss": "^0.43.1",
+    "vite": "^2.9.13",
+    "vite-plugin-pages": "^0.25.0"
   }
 }

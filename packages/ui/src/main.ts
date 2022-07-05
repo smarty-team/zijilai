@@ -9,17 +9,21 @@ import { createApp, h } from "vue";
 //         return h("div", null, [h("div", null, String("Hello Vue"))]);
 //     },
 // };
+
 import { createRouter, createWebHistory } from 'vue-router'
 import { createPinia } from 'pinia'
 const pinia = createPinia()
-
+import "uno.css";
 import App from './App.vue'
+import routes from "~pages";
 const app = createApp(App)
 const router = createRouter({
     history: createWebHistory(),
-    routes: [
-        { path: '/', component: () => import('~/pages/index.vue') }
-    ]
+    routes
+    // routes: [
+    //     { path: '/', component: () => import('~/pages/index.vue') },
+    //     { path: '/login', component: () => import('~/pages/login.vue') }
+    // ]
 })
 app.use(router)
 app.use(pinia)
