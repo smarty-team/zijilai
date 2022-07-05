@@ -11,8 +11,8 @@ import { createApp, h } from "vue";
 // };
 
 import { createRouter, createWebHistory } from 'vue-router'
-import { createPinia } from 'pinia'
-const pinia = createPinia()
+// import { createPinia } from 'pinia'
+// const pinia = createPinia()
 import "uno.css";
 import App from './App.vue'
 import routes from "~pages";
@@ -26,7 +26,12 @@ const router = createRouter({
     // ]
 })
 app.use(router)
-app.use(pinia)
+// app.use(pinia)
+Object.values(import.meta.globEager("./modules/*.ts")).forEach((i) =>
+    i.install?.({ app })
+);
+
+
 app.mount("#app");
 
 
