@@ -3,14 +3,14 @@
 // Read more: https://github.com/vuejs/core/pull/3399
 import '@vue/runtime-core'
 
-export { }
+export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    Navbar: typeof import('./components/Card.vue')['default']
+    Card: typeof import('./components/Card.vue')['default']
+    LevelCard: typeof import('./components/LevelCard.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    SideMenu: typeof import('./components/SideMenu.vue')['default']
   }
 
 }
